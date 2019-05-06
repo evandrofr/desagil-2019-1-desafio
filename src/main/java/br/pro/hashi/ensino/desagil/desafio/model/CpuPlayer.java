@@ -22,8 +22,8 @@ public class CpuPlayer extends Player {
     // Outra diferença fundamental entre o código do Estudo Individual 1 e este:
     // enquanto no EI havia um loop explícito criado por um while, aqui há um loop
     // implícito criado pelo relógio. A inicialização desse loop é o construtor.
-    public CpuPlayer(int row, int col, Board board) {
-        super(row, col, board);
+    public CpuPlayer(int row, int col,String name,Board board) {
+        super(row, col,name, board);
 
         numRows = board.getNumRows();
         numCols = board.getNumCols();

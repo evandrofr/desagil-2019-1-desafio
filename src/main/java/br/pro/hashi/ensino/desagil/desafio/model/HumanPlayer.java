@@ -1,8 +1,8 @@
 package br.pro.hashi.ensino.desagil.desafio.model;
 
 public class HumanPlayer extends Player {
-    public HumanPlayer(int row, int col, Board board) {
-        super(row, col, board);
+    public HumanPlayer(int row, int col,String name, Board board) {
+        super(row, col,name, board);
     }
 
     public void moveUp() {

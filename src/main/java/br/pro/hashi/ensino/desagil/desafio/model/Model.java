@@ -11,11 +11,11 @@ public class Model {
     public Model() {
         board = new Board("board.txt");
 
-        target = new Element(4, 14);
+        target = new Element(4, 14, "corotinho");
 
-        humanPlayer = new HumanPlayer(0, 0, board);
+        humanPlayer = new HumanPlayer(0, 0,"Abel", board);
 
-        cpuPlayer = new CpuPlayer(8, 18, board);
+        cpuPlayer = new CpuPlayer(8, 18,"Cabeça", board);
 
         winner = null;
     }

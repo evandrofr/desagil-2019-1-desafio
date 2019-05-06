@@ -3,6 +3,7 @@ package br.pro.hashi.ensino.desagil.desafio;
 import br.pro.hashi.ensino.desagil.desafio.model.Board;
 import br.pro.hashi.ensino.desagil.desafio.model.Element;
 import br.pro.hashi.ensino.desagil.desafio.model.Model;
+import br.pro.hashi.ensino.desagil.desafio.model.Player;
 
 import javax.swing.*;
 import java.awt.*;
@@ -64,6 +65,8 @@ public class View extends JPanel {
                 g.fillRect(j * CELL_SIZE, i * CELL_SIZE, CELL_SIZE, CELL_SIZE);
             }
         }
+
+        g.drawString("cabeça",50,50);
 
         elementsToImages.forEach((element, image) -> {
             int row = element.getRow();
